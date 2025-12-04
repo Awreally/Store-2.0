@@ -1,10 +1,9 @@
 export class Card {
-  constructor({ title, description, image, price, primaryAction }) {
+  constructor({ title, description, image, price, }) {
     this.title = title;
     this.description = description;
     this.price = price;
     this.image = image;
-    this.primaryAction = primaryAction;
   }
   createCard() {
     const articleCard = document.createElement("article");
@@ -22,8 +21,13 @@ export class Card {
 
     const priceCard = document.createElement("p");
     priceCard.className = "pricecard";
-    priceCard.textContent = `Price: ${this.price} $`;
+    priceCard.textContent = `${this.price} $`;
     articleCard.appendChild(priceCard);
+
+    // const buttonCard = document.createElement('button');
+    // buttonCard.className = 'buttoncard';
+    // buttonCard.textContent = 'Add to cart'
+    // articleCard.appendChild(buttonCard);
 
     return articleCard;
   }
