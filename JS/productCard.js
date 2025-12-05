@@ -24,11 +24,6 @@ export class Card {
     priceCard.textContent = `${this.price} $`;
     articleCard.appendChild(priceCard);
 
-    // const buttonCard = document.createElement('button');
-    // buttonCard.className = 'buttoncard';
-    // buttonCard.textContent = 'Add to cart'
-    // articleCard.appendChild(buttonCard);
-
     return articleCard;
   }
 }

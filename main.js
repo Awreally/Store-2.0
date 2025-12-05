@@ -5,14 +5,13 @@ import { SortCategory } from "./JS/filter.js";
 async function init() {
   try {
     const apiData = new GetApiData();
-    const sortCategory = new SortCategory();
-    const data = await apiData.getData();
-    const allProducts = data;
+    const allProducts = await apiData.getData();
 
     const ui = new uiComponents(".container");
-    ui.products = allProducts;
+    const sortCategory = new SortCategory(allProducts);
 
     const navMenu = document.querySelector(".navmenu");
+    console.log("Dynamic sub categories:", sortCategory.subCategoryMap);
 
     navMenu.addEventListener("click", (e) => {
       if (e.target.tagName !== "A") return;
@@ -23,19 +22,14 @@ async function init() {
 
       if (!category && !main && !sub) return;
 
-      ui.container.innerHTML = "";
-
       if (category === "new") {
-        ui.products = allProducts;
-        ui.renderProduct();
+        ui.render(allProducts);
         return;
       }
 
       const filtered = sortCategory.filter(allProducts, main, sub);
-      ui.products = filtered;
-      ui.renderProduct();
+      ui.render(filtered);
     });
-
   } catch (error) {
     showError("Loading error");
   }

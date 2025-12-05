@@ -1,96 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Store</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script defer type="module" src="main.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="menucontainer">
-            <ul class="navmenu">
-                <li><a class="nav-link active" data-category="new">New in</a></li>
-                <li class="has-dropdown">
-                    <a class="nav-link" data-main="men" aria-haspopup="true" aria-expanded="false">Men</a>
-                    <div class="dropdown" role="menu">
-                        <section class="dropdown-column">
-                            <p class="dropdown-heading">Clothing</p>
-                            <a data-main="men"data-sub="jackets">Jackets</a>
-                            <a href="#">Pants</a>
-                            <a href="#">T-shirts</a>
-                            <a href="#">Sweatshirts</a>
-                            <a href="#">Suits</a>
-                        </section>
-                        <section class="dropdown-column">
-                            <p class="dropdown-heading">Shoes</p>
-                            <a href="#">Sneakers</a>
-                            <a href="#">Boots</a>
-                            <a href="#">Loafers</a>
-                            <a href="#">Sandals</a>
-                        </section>
-                        <section class="dropdown-column">
-                            <p class="dropdown-heading">Accessories</p>
-                            <a href="#">Bags</a>
-                            <a href="#">Belts</a>
-                            <a href="#">Caps & hats</a>
-                            <a href="#">Jewellery</a>
-                        </section>
-                        <section class="dropdown-column highlight">
-                            <p class="dropdown-heading">Highlights</p>
-                            <a href="#">Premium brands</a>
-                            <a href="#">Sportswear</a>
-                            <a href="#">Sustainable picks</a>
-                            <a href="#">Sale up to 50%</a>
-                        </section>
-                    </div>
-                </li>
-                <li class="has-dropdown">
-                    <a class="nav-link" data-category="women" aria-haspopup="true" aria-expanded="false">Women</a>
-                    <div class="dropdown" role="menu">
-                        <section class="dropdown-column">
-                            <p class="dropdown-heading">Clothing</p>
-                            <a href="#">Dresses</a>
-                            <a href="#">Jackets</a>
-                            <a href="#">Pants</a>
-                            <a href="#">Blouses</a>
-                            <a href="#">Knitwear</a>
-                        </section>
-                        <section class="dropdown-column">
-                            <p class="dropdown-heading">Shoes</p>
-                            <a href="#">Heels</a>
-                            <a href="#">Sneakers</a>
-                            <a href="#">Boots</a>
-                            <a href="#">Flats</a>
-                        </section>
-                        <section class="dropdown-column">
-                            <p class="dropdown-heading">Accessories</p>
-                            <a href="#">Bags</a>
-                            <a href="#">Scarves</a>
-                            <a href="#">Jewellery</a>
-                            <a href="#">Beauty</a>
-                        </section>
-                        <section class="dropdown-column highlight">
-                            <p class="dropdown-heading">Highlights</p>
-                            <a href="#">Designer pieces</a>
-                            <a href="#">Occasionwear</a>
-                            <a href="#">Sustainable picks</a>
-                            <a href="#">Sale up to 50%</a>
-                        </section>
-                    </div>
-                </li>
-                <li><a class="nav-link" href="#">Brands</a></li>
-                <li><a class="nav-link" href="#">Outlet</a></li>
-            </ul>
-            <input class="search" type="text" placeholder="Search" aria-label="Search">
-        </nav>
+      <nav class="menucontainer">
+        <ul class="navmenu">
+          <li><a class="nav-link active" data-category="new">New in</a></li>
+          <li class="has-dropdown">
+            <a
+              class="nav-link"
+              data-main="men"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Men</a
+            >
+            <div class="dropdown" role="menu">
+              <section class="dropdown-column">
+                <p class="dropdown-heading">Clothing</p>
+                <a data-main="men" data-sub="bags">Backpack</a>
+                <a data-main="men" data-sub="jackets">Jackets</a>
+                <a data-main="men" data-sub="shirts">Shirts</a>
+                <a data-main="men" data-sub=""></a>
+              </section>
+              <section class="dropdown-column">
+                <p class="dropdown-heading">Shoes</p>
+                <a href="#">Sneakers</a>
+                <a href="#">Boots</a>
+                <a href="#">Loafers</a>
+                <a href="#">Sandals</a>
+              </section>
+              <section class="dropdown-column">
+                <p class="dropdown-heading">Accessories</p>
+                <a href="#">Bags</a>
+                <a href="#">Belts</a>
+                <a href="#">Caps & hats</a>
+                <a href="#">Jewellery</a>
+              </section>
+              <section class="dropdown-column highlight">
+                <p class="dropdown-heading">Highlights</p>
+                <a href="#">Premium brands</a>
+                <a href="#">Sportswear</a>
+                <a href="#">Sustainable picks</a>
+                <a href="#">Sale up to 50%</a>
+              </section>
+            </div>
+          </li>
+          <li class="has-dropdown">
+            <a
+              class="nav-link"
+              data-main="women"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Women</a
+            >
+            <div class="dropdown" role="menu">
+              <section class="dropdown-column">
+                <p class="dropdown-heading">Clothing</p>
+                <a data-main="women" data-sub="jackets">Jackets</a>
+                <a data-main="women" data-sub="shirts">T-shirt</a>
+              </section>
+              <section class="dropdown-column">
+                <p class="dropdown-heading">Shoes</p>
+                <a href="#">Heels</a>
+                <a href="#">Sneakers</a>
+                <a href="#">Boots</a>
+                <a href="#">Flats</a>
+              </section>
+              <section class="dropdown-column">
+                <p class="dropdown-heading">Accessories</p>
+                <a href="#">Bags</a>
+                <a href="#">Scarves</a>
+                <a href="#">Jewellery</a>
+                <a href="#">Beauty</a>
+              </section>
+              <section class="dropdown-column highlight">
+                <p class="dropdown-heading">Highlights</p>
+                <a href="#">Designer pieces</a>
+                <a href="#">Occasionwear</a>
+                <a href="#">Sustainable picks</a>
+                <a href="#">Sale up to 50%</a>
+              </section>
+            </div>
+          </li>
+          <li class="has-dropdown">
+            <a
+              class="nav-link"
+              data-main="jewelery"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Jewelery</a
+            >
+            <div class="dropdown" role="menu">
+              <section class="dropdown-column">
+                <p class="dropdown-heading">Jewelery</p>
+                <a data-main="jewelery" data-sub="bracelet">Bracelet</a>
+                <a data-main="jewelery" data-sub="ring">Ring</a>
+                <a data-main="jewelery" data-sub="earring">Earring</a>
+              </section>
+            </div>
+          </li>
+
+          <li class="has-dropdown">
+            <a
+              class="nav-link"
+              data-main="electronics"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Electronics</a
+            >
+            <div class="dropdown" role="menu">
+              <section class="dropdown-column">
+                <p class="dropdown-heading">Hard Drive</p>
+                <a data-main="electronics" data-sub="harddrive">External</a>
+                <a data-main="electronics" data-sub="ssd">SSD</a>
+                <a data-main="electronics" data-sub="ps4">PS4</a>
+              </section>
+              <section class="dropdown-column">
+                <p class="dropdown-heading">Monitor</p>
+                <a data-main="electronics" data-sub="acer">IPS monitor</a>
+                <a data-main="electronics" data-sub="gaming">Curved monitor</a>
+              </section>
+            </div>
+          </li>
+        </ul>
+
+        <input
+          class="search"
+          type="text"
+          placeholder="Search"
+          aria-label="Search"
+        />
+      </nav>
     </header>
     <main>
-        <div class="container"></div>
+      <div class="container"></div>
     </main>
-</body>
+  </body>
 </html>

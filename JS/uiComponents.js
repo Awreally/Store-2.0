@@ -14,4 +14,10 @@ export class uiComponents {
       this.container.appendChild(cardElement);
     });
   }
+
+  render(products) {
+    this.container.innerHTML = "";
+    this.products = products;
+    this.renderProduct();
+  }
 }
